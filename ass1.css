@@ -107,7 +107,7 @@ body{
 .circle{
 	height: 30px;
 	width: 30px;
-	border:2px solid black;
+	border:2px solid yellow;
 	position: relative;
 	left: 200px;
 	right:0;
