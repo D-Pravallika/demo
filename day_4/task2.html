@@ -4,30 +4,34 @@
 	<title></title>
 </head>
 <body>
+	
 	<div>
 		<h1>Register form</h1>
-		<form>
-			Name        : <br>
-			<input type="text" name="Name">
+
+		<form action="welcome.php" method="POST" id="form1">
+			
+			<label for="fname">First name:</label>
+			 <input type="text" id="fname" name="name"><br><br>
 			<br><br>
 			Phone Number: <br>
-			<input type="number" name=""><br><br>
+			<input type="number" name="number"><br><br>
 			<span>Choice of courses:</span><br>
 			Bachelors<input type="radio" name="gen">
 			Masters<input type="radio" name="gen"><br><br>
 			<span>Description</span><br><br>
 			<textarea rows="2" cols="40"></textarea><br><br>
 			<span >Subject Interests</span><br>
-			<input type="checkbox" name="">HTML<br>
-			<input type="checkbox" name="">CSS<br>
-			<input type="checkbox" name="">Java Script<br>
-			<input type="checkbox" name="">Python<br>
-			<input type="checkbox" name="">Data Science<br>
-			<input type="checkbox" name="">Artificial Intelligence<br><br>
-			<input type="submit" name="">
+			<input type="checkbox" name="Subject">HTML<br>
+			<input type="checkbox" name="Subject">CSS<br>
+			<input type="checkbox" name="Subject">Java Script<br>
+			<input type="checkbox" name="Subject">Python<br>
+			<input type="checkbox" name="Subject">Data Science<br>
+			<input type="checkbox" name="Subject">Artificial Intelligence<br><br>
+			<input type="submit" name="submit">
 
 
 		</form>
 	</div>
+
 </body>
 </html>

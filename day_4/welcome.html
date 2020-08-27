@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function display()
+{
+document.getElementById("displayarea").innerHTML = document.getElementById("fname").value; 
+document.getElementById("fname").value = "";
+document.getElementById("displayarea1").innerHTML = document.getElementById("number").value; 
+document.getElementById("number").value = "";
+
+document.getElementById("displayarea3").innerHTML = document.getElementById("texting").value; 
+document.getElementById("texting").value = "";
+document.getElementById("displayarea2").innerHTML = document.getElementById("college").value; 
+document.getElementById("college").value = "";
+
+
+}
+</script>
+</head>
+<body>
+Name:
+<input type="text" name="fname" id="fname"><br><br>
+Phone Number: <br><br>
+      <input type="number" name="number" id="number"><br><br>
+     
+      <span>Description</span><br><br>
+      <textarea rows="2" cols="40" id="texting"></textarea><br><br>
+      College:<br><br>
+      <input type="text" name="" id="college">
+      <input type="button" value="Submit" name="submit" id="submit" onClick="display()"/>
+ 
+
+ <div id="displayarea"></div>
+<div id="displayarea1"></div>
+<div id="displayarea2"></div>
+<div id="displayarea3"></div>
+<div id="displayarea4"></div>
+
+</body>
+</html>
