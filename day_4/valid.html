@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["number"].value;
+  if (x == "") {
+    alert("Number must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["Branch"].value;
+  if (x == "") {
+    alert("Branch must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["college"].value;
+  if (x == "") {
+    alert("college must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body style="background-color: pink">
+<h1>Fill the details</h1>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  Name: <br>
+  <input type="text" name="fname"><br>
+  Phone Number: <br>
+  <input type="number" name="number"><br>
+  Branch: <br>
+  <input type="text" name="Branch"><br>
+  College: <br>
+  <input type="text" name="college"><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
