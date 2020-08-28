@@ -1,0 +1,13 @@
+body{
+	background-color: #4dd0e1;
+	font-family: Arial, Helvetica, sans-serf;
+	line-height: 1.6em;
+}
+
+.heading{
+	/*background-color: red;*/
+	color: white;
+}
+.para{
+	background-color: #c3d754;
+}
