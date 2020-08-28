@@ -7,6 +7,12 @@
 			background-color: skyblue;
 
 		}
+		[class*="frow"] {
+  background: yellow;
+}
+		tr[target = blank]{
+			background-color: pink;
+		}
 		.tit{
 			padding-top: 50px;
 			padding-bottom: 50px;
@@ -48,7 +54,8 @@
 			border-collapse: collapse;
   		border: 1px solid #ddd;
   		padding: 8px;
-  		outline: purple solid 2px;
+  		outline: purple solid 1px;
+  		
 
 		}
 		table{
@@ -75,20 +82,20 @@
 	<img class="imgg" src="https://static.dezeen.com/uploads/2020/02/house-in-the-landscape-niko-arcjitect-architecture-residential-russia-houses-khurtin_dezeen_2364_hero.jpg">
 	<h3>Table</h3>
 	<table id="frfl">
-		<tr>
-			<th>Fruits</th>
+		<tr class="frow">
+			<th target="h">Fruits</th>
 			<th>Flowers</th>
 		</tr>
-		<tr>
+		<tr target = "blank">
 			<td>Apple</td>
 			<td>Rose</td>
 		</tr>
-		<tr>
+		<tr class="frow">
 			<td>Mango</td>
 			<td>Sunflower</td>
 		</tr>
-		<tr>
-			<td>Orange</td>
+		<tr target = "blank">
+			<td target = "blank">Orange</td>
 			<td>Lily</td>
 		</tr>
 	</table>
