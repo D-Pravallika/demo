@@ -10,6 +10,8 @@
 	<button onclick="change_color('red')">Red</button>
 	<br>
 	<h2 onclick="change_text(this)">Good Morning</h2>
+	<script src="scripts/main.js"></script>
+
 </body>
 <script>
 	function change_color(new_color){
@@ -17,6 +19,17 @@
 	}
 	function change_text(change_tx){
 		change_tx.innerHTML = " Very Good Morning ";
+	}
+
+	const myHeading = document.querySelector('h1');
+	myHeading.textContent = 'Hello world';
+	let myname = 'Pravallika';
+	myname;
+	if(myname === 'Pravallika'){
+		alert('I am Pravallika');
+	}
+	else{
+		alert('Chinnu');
 	}
 </script>
 </html>
