@@ -8,11 +8,21 @@
 <body>
 	<h1>function calling..</h1>
 	<p id = "mul"></p>
+	<h2 onclick="myFunction()">Let us find Name</h2>
+	<p id="demo"></p>
 </body>
 <script>
 	function mul(a,b){
 		return a*b;
 	}
 	document.getElementById('mul').innerHTML = mul(5,2);
+	
+function myFunction() {
+  var str = "Let us find Name";
+  var patt = /Name/i;
+  var result = str.match(patt);
+  document.getElementById("demo").innerHTML = result;
+}
+
 </script>
 </html>
