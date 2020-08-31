@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is my first dhtml code</title>
+</head>
+<body>
+	<h1 onclick="this.style.color='green'">Introduction of DHTML</h1>
+	<p id="demo">Do you want to see some magic..</p>
+	<button onclick="change_color('blue')">Blue</button>
+	<button onclick="change_color('red')">Red</button>
+	<br>
+	<h2 onclick="change_text(this)">Good Morning</h2>
+</body>
+<script>
+	function change_color(new_color){
+		var element = document.getElementById('demo').style.color =new_color;
+	}
+	function change_text(change_tx){
+		change_tx.innerHTML = " Very Good Morning ";
+	}
+</script>
+</html>
