@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Maths functions in HTML</h1>
+	<p>Power of 3 and 2</p>
+	<p id="power"></p>
+	<p>Square root of 25 is</p>
+	<p id="squareroot"></p>
+	<p>Absolute value of -10</p>
+	<p id="absolute"></p>
+	<p>Random number</p>
+	<p id="randomnum"></p>
+	<p>Ceil the above num</p>
+	<p id="ceilit"></p>
+	<p>round the above number</p>
+	<p id="roundit"></p>
+	<p>Floor the number</p>
+	<p id="floorit"></p>
+	<p>Sine function</p>
+	<p id="sineit"></p>
+</body>
+<script>
+	document.getElementById("power").innerHTML = Math.pow(3,2);
+	document.getElementById("squareroot").innerHTML = Math.sqrt(25);
+	document.getElementById("absolute").innerHTML = Math.abs(-10);
+	var a = document.getElementById("randomnum").innerHTML = Math.floor(Math.random() * 30.5);
+	document.getElementById("ceilit").innerHTML = Math.ceil(a);
+	document.getElementById("roundit").innerHTML = Math.round(a);
+	document.getElementById("floorit").innerHTML = Math.floor(a);
+	document.getElementById("sineit").innerHTML = Math.sin(a);
+</script>
+</html>
