@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table ,th ,td{
+			border : 2px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>Mark List</h1>
+	<table id="table">
+		<tr>
+			<th>
+				Subjects
+			</th>
+			<th>
+				Marks
+			</th>
+		</tr>
+		<tr>
+			<td>Microwave Engineering</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>Digital Signal Processing</td>
+			<td>98</td>
+		</tr>
+		<tr>
+			<td>Microrocessors and Interfacing</td>
+			<td>95</td>
+		</tr>
+		
+	</table>
+	<button onclick="myFunction()">result</button>
+	<span id = "va"></span>
+	<span id = "val"></span>
+	
+</body>
+<script>
+	var table = document.getElementById("table"), avgVal, sumVal = 0, 
+                        rowCount = table.rows.length - 1;// minus the header
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[1].innerHTML);
+            }
+            //document.getElementById("va").innerHTML = "Average Value = " + parseInt(sumVal);
+            //document.getElementById("val").innerHTML = "Average Value = " + parseInt(sumVal / rowCount);
+	function myFunction() {
+  var table = document.getElementById("table");
+  var row = table.insertRow(4);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "Total";
+  cell2.innerHTML = sumVal;
+  var row = table.insertRow(5);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "Average";
+  cell2.innerHTML = sumVal / rowCount;
+  
+}
+</script>
+</html>
