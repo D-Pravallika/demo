@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="hd">Reading date and printing it</h1>
+	<p><input type="date" id="dates" name=""></p>
+	<p id="pd"></p>
+	<button onclick="myFunction()">Try it</button>
+</body>
+<script>
+	function myFunction() {
+  var x = document.getElementById('dates').value;
+  document.getElementById("pd").innerHTML = x;
+}
+</script>
+</html>
