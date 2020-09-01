@@ -8,11 +8,35 @@
 	<p><input type="date" id="dates" name=""></p>
 	<p id="pd"></p>
 	<button onclick="myFunction()">Try it</button>
+	<h2>Which Book do you like?</h2>
+	<select id="books" onchange="bookfun()">
+		<option>Harry Potter</option>
+		<option>Animal Farm</option>
+		<option>One Indian Girl</option>
+	</select>
+	<p id="printbook"></p>
+	<img src="https://www.clipartkey.com/mpngs/m/222-2220232_thumbs-up-clipart-transparent-png-star-thumbs-up.png" onmouseover="bigImg(this)" onmouseout="smallImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+	<input type="text" onkeydown="keydowning()">
 </body>
 <script>
 	function myFunction() {
   var x = document.getElementById('dates').value;
   document.getElementById("pd").innerHTML = x;
+}
+function bookfun(){
+	var x = document.getElementById('books').value;
+	document.getElementById('printbook').innerHTML = "book = "+x;
+}
+function bigImg(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+function smallImg(x) {
+  x.style.height = "50px";
+  x.style.width = "50px";
+}
+function keydowning() {
+  alert("You pressed a key inside the input field");
 }
 </script>
 </html>
