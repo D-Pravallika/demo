@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>This string contains some thing in which there is no important informaation but only to do some tasks. To find the words by its index.</p>
+	<button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+    <p id="5th"></p>
+    <p id="7th"></p>
+    <p id="10th"></p>
+</body>
+<script>
+	function myFunction() {
+  var str = "This string contains some thing in which there is no important informaation but only to do some tasks. To find the words by its index.";
+  var res = str.split(" ");
+  document.getElementById("demo").innerHTML = res;
+  document.getElementById("5th").innerHTML = res[5];
+  document.getElementById("7th").innerHTML = res[7];
+  document.getElementById("10th").innerHTML = res[10];
+}
+</script>
+</html>
