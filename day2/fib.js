@@ -10,3 +10,11 @@ for (let i = 1; i <= number; i++) {
     n2 = nextTerm;
 }
 }
+try{
+	if(number> 100){
+		throw "too big";
+	}
+}
+catch(err){
+	console.log("err");
+}
