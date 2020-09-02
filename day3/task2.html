@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<p>Hello</p>
+<a href="#">Click to hide me too</a>
+<p id="para">Here is another paragraph</p>
+<p id="paragra"></p>
+<button id="btnn">Hello</button>
+<button id="btns">Haii</button>
+ 
+<script>
+	$(document).ready(function(){
+
+$( "#btnn" ).click(function() {
+  
+  $("#para").hide();
+
+
+});
+$( "#btns" ).click(function() {
+  
+  $("#paragra").show();
+
+
+});
+});
+</script>
+ 
+</body>
+</html>
