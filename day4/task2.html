@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+ var name=$("#name").val();
+ var address=$("#address").val();
+ alert(name);
+ alert(address);
+ $.post( "post.php",
+ {
+ name1:name,
+ address1:address,
+ }
+ ,function( data ) {
+ alert(data );
+ });
+ });
+});
+</script>
+</head>
+<body>
+<center>
+<h1>Jquery Post Request Test</h1>
+<form>
+Name : <input type="text" id="name"/><br>
+Address : <input type="text" id="address"/><br>
+<button>Submit</button>
+</for>
+</center>
+</body>
+</html>
