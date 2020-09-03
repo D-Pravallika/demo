@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+function fadeToggle(div_id, button) {
+
+        if (button.value == 'Fade Out') {
+            $('#' + div_id).fadeOut('slow');
+            button.value = 'Fade In';
+        } else {
+            $('#' + div_id).fadeIn(2000);
+            button.value = 'Fade Out';
+        }
+    }
+    
+    function fadeToToggle(div_id, button) {
+
+        if (button.value == 'FadeTo 50%') {
+            $('#' + div_id).fadeTo('slow' , 0.5);
+            button.value = 'FadeTo 100%';
+        } else {
+            $('#' + div_id).fadeTo(4000 , 1.0);
+            button.value = 'FadeTo 50%';
+        }
+    }
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:pink;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:50px;
+    text-align:center;
+    background-color:green;
+    border:solid 5px;
+    color: white;
+}
+#fade, #fadeTo {
+    width: 150px;
+    height: 80px;
+    padding:10px;
+    border: 1px solid black;
+    background-color: blue;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">Please double click on this and change its color</div>
+<input type="button" value="Fade Out" onclick="fadeToggle('fade', this)" />
+    <br><br>
+    
+    <div id="fade">If you don't want to see this text click the button. If u want to see it click the button once more.</div>
+    <br>
+    
+    <input type="button" value="FadeTo 50%" onclick="fadeToToggle('fadeTo', this)" />
+    <div id="fadeTo">Do you want some smoky effect?</div>
+</body>
+</html>
